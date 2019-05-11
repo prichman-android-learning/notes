@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="title">Title</string>
+    <string name="body">Body</string>
+    <string name="position_key">position</string>
+    <string name="new_note_key">new_note</string>
+</resources>
