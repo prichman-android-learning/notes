@@ -4,4 +4,9 @@
     <string name="body">Body</string>
     <string name="position_key">position</string>
     <string name="new_note_key">new_note</string>
+
+    <string name="delete_text">Delete selected</string>
+    <string name="cancel_text">Cancel selection</string>
+    <string name="pin_text">Pin</string>
+
 </resources>

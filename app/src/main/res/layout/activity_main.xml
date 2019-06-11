@@ -7,18 +7,28 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" android:layout_marginTop="0dp"
-            android:layout_marginStart="0dp" android:layout_marginEnd="0dp"
-            android:layout_marginBottom="0dp"
-            android:id="@+id/notesView" tools:listitem="@layout/note_item_layout" tools:itemCount="2">
-    </androidx.recyclerview.widget.RecyclerView>
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primary"
+                app:popupTheme="@style/AppTheme.NoActionBar"
+                app:layout_scrollFlags="scroll|enterAlways" android:id="@+id/toolbar"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_main"/>
+    <include layout="@layout/bottom_selected_sheet"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true" app:srcCompat="@drawable/ic_add_note"
             android:id="@+id/addButton" android:layout_gravity="bottom|end" android:layout_margin="16dp"
-            android:focusable="true"/>
+            android:focusable="true" app:backgroundTint="@color/accent"/>
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

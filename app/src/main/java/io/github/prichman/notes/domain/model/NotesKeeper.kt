@@ -10,9 +10,8 @@ class NotesKeeper {
     fun add(note: Note) = notes.add(note)
 
     fun remove(notes: List<Note>) {
-        for (note in notes) {
-            this.notes.remove(note)
-        }
+        this.notes.removeAll(notes)
+        var a = 5
     }
 
     fun note(index: Int): Note {

@@ -31,6 +31,11 @@ class NotesViewModel : ViewModel() {
         update()
     }
 
+    fun removeNotes(notes: List<Note>) {
+        notesKeeper.remove(notes)
+        update()
+    }
+
     fun getCurrentDate(): Date {
         val day   = Calendar.getInstance().get(Calendar.DAY_OF_MONTH)
         val month = Calendar.getInstance().get(Calendar.MONTH) + 1
